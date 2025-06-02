@@ -2,26 +2,125 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Página simulada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popozuda - Tratamento Completo</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff6f2;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      color: #4a1c2c;
     }
-    body, html {
-      width: 100%;
-      height: 100%;
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
     }
-    img {
+
+    h1 {
+      color: #b01842;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitulo {
+      font-size: 16px;
+      color: #6a3e4f;
+      margin-bottom: 40px;
+    }
+
+    .produtos {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .produto {
+      width: 280px;
+      margin-bottom: 30px;
+    }
+
+    .produto img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      max-width: 200px;
+    }
+
+    .seta {
+      font-size: 50px;
+      color: #b01842;
+    }
+
+    .descricao {
+      background-color: white;
+      border: 2px solid #b01842;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .destaque {
+      font-weight: bold;
+      color: #b01842;
+    }
+
+    .rodape {
+      margin-top: 40px;
+      font-weight: bold;
+      color: #b01842;
+    }
+
+    @media (max-width: 768px) {
+      .produtos {
+        flex-direction: column;
+      }
+
+      .seta {
+        transform: rotate(90deg);
+        margin: 20px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="imagens/imgs01.png" alt="Print da página">
+  <div class="container">
+    <h1>Tratamento completo, ação em dobro!</h1>
+    <p class="subtitulo">
+      Popozuda é um tratamento 2 em 1 criado para combater os sintomas da lipedema com resultados visíveis.<br>
+      Enquanto o creme ativa a circulação e reduz o inchaço, o spray firma a pele e estimula a produção de colágeno.
+    </p>
+
+    <div class="produtos">
+      <!-- Creme -->
+      <div class="produto">
+        <img src="https://i.imgur.com/WdgQ5Tf.png" alt="Creme Popozuda">
+        <div class="descricao">
+          <span class="destaque">Creme Popozuda</span><br>
+          Reduz o inchaço, ativa a circulação, diminui a celulite e a retenção de líquidos.
+        </div>
+      </div>
+
+      <!-- Setas -->
+      <div class="seta">⟳</div>
+
+      <!-- Spray -->
+      <div class="produto">
+        <img src="https://i.imgur.com/WiMxV5z.png" alt="Spray Popozuda">
+        <div class="descricao">
+          <span class="destaque">Spray Popozuda</span><br>
+          Estimula o colágeno, melhora a elasticidade, proporcionando uma pele mais firme e uniforme.
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape">
+      Juntos, eles entregam o que nenhum outro faz!
+    </div>
+  </div>
 </body>
 </html>
